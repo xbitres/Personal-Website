@@ -1,15 +1,71 @@
-h1, p {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em; }
 
-body {
-  background-color: #efefef; }
+p, li, a {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 1.1em; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.btn {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background-color: pink;
+  display: inline-block; }
+
+.btn-white {
+  color: white;
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 10px; }
+
+.btn-white:hover {
+  background: rgba(255, 255, 255, 0.1); }
+
+.btn-purple {
+  color: #40407a;
+  background: transparent;
+  border: 3px solid #40407a;
+  border-radius: 10px; }
+
+.btn-purple:hover {
+  background: rgba(64, 64, 122, 0.1); }
 
 header {
-  background: white;
-  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url("../img/header.jpg") no-repeat center center fixed;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/header.jpg") no-repeat center center fixed;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/header.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/header.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 550px;
+  color: white;
   text-align: center;
-  line-height: 300px; }
+  line-height: 40px; }
+  header img {
+    margin-top: 100px;
+    border-radius: 200px;
+    border: 5px solid #40407a;
+    width: 150px; }
   header h1 {
-    font-weight: 600;
-    font-size: 2em;
-    color: blue; }
+    margin-top: 25px; }
+  header ul.positions li {
+    display: inline; }
+  header ul.positions li:after {
+    content: " \00b7"; }
+  header ul.positions li:last-child:after {
+    content: none; }
+  header ul.socialmedia li {
+    display: inline;
+    font-size: 1.8em;
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.8); }
+  header ul.socialmedia li:first-child {
+    padding-left: 0; }
+  header ul.socialmedia li:hover {
+    color: white; }
+  header .btn {
+    margin-top: 10px; }
