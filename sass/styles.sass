@@ -4,10 +4,16 @@
 h1
     font-family: $header-fonts
     font-size: 2em
+    font-weight: 600
+    color: #34ace0
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 p, li, a
     font-family: $fonts
     font-size: 1.1em
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 a 
     color: inherit
@@ -52,6 +58,7 @@ header
 
     h1
         margin-top: 25px
+        color: white
 
     ul.positions
         li
@@ -76,3 +83,62 @@ header
     
     .btn
         margin-top: 10px
+
+section
+    padding: 50px 0
+    .container
+        max-width: 1024px 
+        margin: 0 auto
+    h1
+        text-align: center
+        margin-top: 5px
+        margin-bottom: 25px
+        text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.35)
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+    h1:before,
+    h1:after
+        flex-grow: 0.1
+        height: 0.15em
+        content: '\a0'
+        border-radius: 10px
+        background-color: #34ace0
+        position: relative
+        top: 0.47em
+        box-shadow: 1px 1px 9px rgba(150, 150, 150, 0.35)
+
+
+    h1:before
+        margin-right: 10px
+
+    h1:after
+        margin-left: 10px
+
+    p
+        font-size: 1.2em
+        line-height: 1.5em
+        text-align: justify
+        padding: 10px 20px
+
+section.about-me
+    background-color: #f7f1e3
+
+    img
+        width: 300px
+        display: inline-block
+        //margin: 10px 20px
+        border-radius: 10px
+        box-shadow: 10px 10px 40px -15px rgba(0,0,0,0.75)
+
+    img.about-me-1
+        float: left
+        margin-right: 20px
+        margin-bottom: 10px
+
+    img.about-me-2
+        float: right
+        top: -50%
+        margin-left: 20px
+        margin-bottom: 10px
